@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impromax Mayorista | Repuestos de Automatización Industrial</title>
+    <meta name="description" content="Únete a la red de distribuidores de Impromax. Precios especiales en Variadores de Frecuencia, PLC, Fuentes de Poder y más. Despacho a todo Chile.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Definición de Variables CSS basada en la nueva paleta */
+        :root {
+            --color-primary: #F36719;   /* Naranja Corporativo */
+            --color-secondary: #EA8E56; /* Naranja Suave */
+            --color-dark: #232628;      /* Gris Oscuro Header/Footer */
+            --color-medium: #545051;    /* Gris Medio Textos */
+            --color-black: #000000;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--color-dark);
+        }
+
+        /* Utilidades de Color Personalizadas */
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-medium); }
+        .text-dark { color: var(--color-dark); }
+        .bg-dark { background-color: var(--color-dark); }
+        
+        /* Gradiente Corporativo */
+        .bg-gradient-corporate {
+            background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+        }
+
+        /* Botones y Hovers */
+        .btn-primary {
+            background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #EA8E56 0%, #F36719 100%); /* Invertir gradiente sutilmente */
+            box-shadow: 0 4px 15px rgba(243, 103, 25, 0.4);
+        }
+
+        .hover-text-primary:hover {
+            color: var(--color-primary);
+        }
+
+        /* Fondo Hero */
+        .hero-bg {
+            /* Overlay oscuro usando el gris corporativo #232628 con opacidad */
+            background-image: linear-gradient(rgba(35, 38, 40, 0.92), rgba(35, 38, 40, 0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Sticky (Ahora Gris Oscuro #232628) -->
+    <header class="bg-[#232628] shadow-md fixed w-full z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo con filtro para verse blanco sobre fondo oscuro -->
+                <a href="#" class="flex items-center gap-2">
+                    <img src="client_logo.png" alt="Impromax Logo" class="h-12 w-auto object-contain brightness-0 invert">
+                    <span class="text-xl font-bold text-white hidden sm:inline border-l border-gray-600 pl-3 ml-1">Mayorista</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 font-medium text-sm text-gray-300">
+                <a href="#beneficios" class="hover:text-[#F36719] transition">Beneficios</a>
+                <a href="#productos" class="hover:text-[#F36719] transition">Catálogo</a>
+                <a href="#contacto" class="hover:text-[#F36719] transition">Contacto</a>
+            </div>
+            <div>
+                <!-- Botón CTA Header: Naranja Corporativo -->
+                <a href="https://wa.me/56957891186" target="_blank" class="bg-[#F36719] hover:bg-[#EA8E56] text-white px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> <span class="hidden sm:inline">Hablar con Giovanni</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-24 pb-12" id="inicio">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Left Content -->
+                <div class="lg:w-1/2 text-white">
+                    <div class="inline-block bg-[#F36719] bg-opacity-20 border border-[#F36719] text-[#F36719] rounded-full px-4 py-1 text-sm font-bold mb-6 backdrop-blur-sm">
+                        🚀 Distribuidor Líder en Automatización
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                        Aumenta tu rentabilidad con precios <span class="text-[#F36719]">Mayoristas</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-lg font-light">
+                        Accede al stock más completo de Variadores de Frecuencia, PLC y Control Industrial. Despacho inmediato a todo Chile.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 text-sm font-medium text-gray-200 mb-8">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-[#F36719]"></i> Stock Garantizado
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-[#F36719]"></i> Asesoría Técnica
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-[#F36719]"></i> Envíos en 24hrs
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form (Lead Magnet) -->
+                <div class="lg:w-5/12 w-full">
+                    <!-- Borde superior naranja -->
+                    <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 transform transition hover:scale-105 duration-300 border-t-4 border-[#F36719]">
+                        <h3 class="text-2xl font-bold text-[#232628] mb-2 text-center">Solicita tu Lista de Precios</h3>
+                        <p class="text-[#545051] text-center mb-6 text-sm">Completa el formulario y Giovanni te contactará a la brevedad.</p>
+                        
+                        <form id="leadForm" class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido enviada. Giovanni Rojas te contactará pronto.');">
+                            <div>
+                                <label class="block text-xs font-bold text-[#545051] uppercase mb-1">Nombre Completo</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F36719] focus:ring-2 focus:ring-orange-100 outline-none transition" placeholder="Ej: Juan Pérez">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-[#545051] uppercase mb-1">Empresa / Razón Social</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F36719] focus:ring-2 focus:ring-orange-100 outline-none transition" placeholder="Ej: Servicios Eléctricos SPA">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-[#545051] uppercase mb-1">Teléfono</label>
+                                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F36719] focus:ring-2 focus:ring-orange-100 outline-none transition" placeholder="+569...">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-[#545051] uppercase mb-1">Email</label>
+                                    <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F36719] focus:ring-2 focus:ring-orange-100 outline-none transition" placeholder="correo@empresa.cl">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-[#545051] uppercase mb-1">Interés Principal</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#F36719] outline-none bg-white">
+                                    <option>Variadores de Frecuencia</option>
+                                    <option>Controladores y PLC</option>
+                                    <option>Fuentes de Poder</option>
+                                    <option>Tableros Eléctricos</option>
+                                    <option>Todo el catálogo</option>
+                                </select>
+                            </div>
+                            <!-- Botón con Gradiente Corporativo -->
+                            <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition transform active:scale-95 text-lg">
+                                <i class="fa-solid fa-download mr-2"></i> DESCARGAR CATÁLOGO
+                            </button>
+                            <p class="text-xs text-center text-gray-400 mt-4">
+                                <i class="fa-solid fa-lock"></i> Tus datos están 100% seguros.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust / Brands Bar -->
+    <section class="py-8 bg-gray-100 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-[#545051] text-sm font-semibold uppercase tracking-widest mb-6">Trabajamos con las mejores marcas del mercado</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Brand Placeholders (Text used for simplicity in this demo) -->
+                <div class="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i class="fa-solid fa-square"></i> SCHNEIDER</div>
+                <div class="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i class="fa-solid fa-bolt"></i> MEAN WELL</div>
+                <div class="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i class="fa-solid fa-microchip"></i> SUSWE</div>
+                <div class="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i class="fa-solid fa-industry"></i> YUANSHIN</div>
+                <div class="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i class="fa-solid fa-plug"></i> OMCH</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Grid -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#232628] mb-4">¿Por qué elegir Impromax como proveedor?</h2>
+                <p class="text-[#545051] max-w-2xl mx-auto">Entendemos las necesidades de la industria. No solo vendemos repuestos, ofrecemos soluciones logísticas y técnicas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
+                    <!-- Fondo suave naranja (#EA8E56 con mucha transparencia) -->
+                    <div class="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
+                        <i class="fa-solid fa-truck-fast text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#232628]">Logística Nacional Rápida</h3>
+                    <p class="text-[#545051] text-sm leading-relaxed">
+                        Despachamos desde Lampa a todo Chile. De Arica a Punta Arenas, tus repuestos llegan cuando los necesitas.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
+                    <div class="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
+                        <i class="fa-solid fa-tags text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#232628]">Precios Competitivos</h3>
+                    <p class="text-[#545051] text-sm leading-relaxed">
+                        Accede a márgenes preferenciales para integradores y revendedores. Escalado de precios por volumen.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
+                    <div class="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
+                        <i class="fa-solid fa-headset text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#232628]">Atención Personalizada</h3>
+                    <p class="text-[#545051] text-sm leading-relaxed">
+                        Trato directo y sin intermediarios. Gestiona tus pedidos y consultas técnicas directamente con Giovanni Rojas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="productos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="text-[#F36719] font-bold uppercase tracking-wider text-sm">Nuestro Catálogo</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#232628] mt-2">Productos de Alta Rotación</h2>
+                </div>
+                <a href="#inicio" class="hidden md:inline-flex items-center text-[#F36719] font-bold hover:text-[#EA8E56] transition">
+                    Ver catálogo completo <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden flex items-center justify-center">
+                        <!-- Icono gris que cambia a naranja al hover -->
+                        <i class="fa-solid fa-gauge-high text-6xl text-gray-400 group-hover:text-[#F36719] group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-3 right-3 bg-[#F36719] text-white text-xs font-bold px-2 py-1 rounded shadow">-15% OFF</div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-[#232628] mb-1">Variadores de Frecuencia</h4>
+                        <p class="text-sm text-[#545051] mb-4">Trifásicos 380v y Monofásicos. Desde 0.75KW hasta 18.5kW.</p>
+                        <a href="#inicio" class="text-[#F36719] text-sm font-bold hover:text-[#EA8E56]">Cotizar Lote &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-car-battery text-6xl text-gray-400 group-hover:text-[#F36719] group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-[#232628] mb-1">Fuentes de Poder</h4>
+                        <p class="text-sm text-[#545051] mb-4">Mean Well y genéricas. 24VDC, Riel DIN. Alta eficiencia.</p>
+                        <a href="#inicio" class="text-[#F36719] text-sm font-bold hover:text-[#EA8E56]">Cotizar Lote &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-microchip text-6xl text-gray-400 group-hover:text-[#F36719] group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-[#232628] mb-1">Control Industrial</h4>
+                        <p class="text-sm text-[#545051] mb-4">PLC, HMI, Relés y Sensores. Automatización completa.</p>
+                        <a href="#inicio" class="text-[#F36719] text-sm font-bold hover:text-[#EA8E56]">Cotizar Lote &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden flex items-center justify-center">
+                        <i class="fa-solid fa-wind text-6xl text-gray-400 group-hover:text-[#F36719] group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-[#232628] mb-1">Neumática</h4>
+                        <p class="text-sm text-[#545051] mb-4">Conectores, mangueras, válvulas y cilindros.</p>
+                        <a href="#inicio" class="text-[#F36719] text-sm font-bold hover:text-[#EA8E56]">Cotizar Lote &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="#inicio" class="inline-block bg-white border border-[#F36719] text-[#F36719] font-bold py-3 px-8 rounded-lg hover:bg-orange-50 transition">Ver todo el catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Stats - Fondo con Gradiente Corporativo -->
+    <section class="py-16 bg-gradient-corporate text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
+                <div>
+                    <div class="text-4xl font-black mb-2 counter">1500+</div>
+                    <div class="text-orange-100 text-sm uppercase font-semibold">Clientes Felices</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black mb-2">24h</div>
+                    <div class="text-orange-100 text-sm uppercase font-semibold">Tiempo de Despacho</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black mb-2">100%</div>
+                    <div class="text-orange-100 text-sm uppercase font-semibold">Stock Garantizado</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black mb-2">Lampa</div>
+                    <div class="text-orange-100 text-sm uppercase font-semibold">Centro de Distribución</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-[#232628] mb-12">Preguntas Frecuentes Distribuidores</h2>
+            
+            <div class="space-y-4">
+                <details class="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
+                    <summary class="flex justify-between items-center font-bold text-[#232628] list-none">
+                        <span>¿Cuál es el monto mínimo de compra mayorista?</span>
+                        <!-- Chevron en Naranja -->
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                    </summary>
+                    <p class="text-[#545051] mt-4 leading-relaxed">
+                        Para acceder a la primera escala de precios mayoristas, no exigimos un monto mínimo elevado, pero sí la validación comercial como empresa del rubro o técnico integrador. Completa el formulario para evaluar tu caso.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
+                    <summary class="flex justify-between items-center font-bold text-[#232628] list-none">
+                        <span>¿Realizan facturación a 30 días?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                    </summary>
+                    <p class="text-[#545051] mt-4 leading-relaxed">
+                        Sí, disponemos de líneas de crédito para clientes recurrentes tras una evaluación comercial. Inicialmente trabajamos con transferencia o Webpay.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
+                    <summary class="flex justify-between items-center font-bold text-[#232628] list-none">
+                        <span>¿Tienen tienda física para retiro?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                    </summary>
+                    <p class="text-[#545051] mt-4 leading-relaxed">
+                        Sí, nuestra casa matriz y bodega está ubicada en Sargento Aldea 830, Paseo Las Palmeras, Local 13, Lampa, RM. Puedes retirar tus pedidos coordinando con tu ejecutivo.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer (Gris Oscuro #232628) -->
+    <footer id="contacto" class="bg-[#232628] text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Info -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
+                         <img src="client_logo.png" alt="Impromax" class="h-8 brightness-0 invert"> IMPROMAX
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-6 text-[#545051] text-gray-400">
+                        Expertos en automatización industrial. Proveemos soluciones eficientes y rápidas para mantener la industria chilena en movimiento.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#F36719] hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#F36719] hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#F36719] hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contacto Mayorista</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-user-tie text-[#F36719] mt-1"></i>
+                            <div>
+                                <span class="block text-white font-semibold">Giovanni Rojas</span>
+                                <span class="text-[#545051] text-gray-400 text-xs">Jefe Venta Mayorista</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone text-[#F36719] mt-1"></i>
+                            <a href="tel:+56957891186" class="hover:text-[#F36719] transition font-bold">+56 9 5789 1186</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope text-[#F36719] mt-1"></i>
+                            <a href="mailto:ventas@impromax.cl" class="hover:text-[#F36719] transition">ventas@impromax.cl</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Map/Location -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Ubicación</h4>
+                    <p class="text-sm mb-4 text-gray-400">
+                        <i class="fa-solid fa-location-dot text-[#F36719] mr-2"></i>
+                        Sargento Aldea 830, Paseo Las Palmeras, Local 13, Santiago - Lampa
+                    </p>
+                    <div class="w-full h-40 bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700">
+                        <span class="text-xs text-gray-500 uppercase font-semibold tracking-wider">[ Mapa de Google ]</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-[#545051]">
+                <p>&copy; 2026 Impromax. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button (Se mantiene verde por ser estándar UX, pero puedes cambiarlo a naranja si prefieres) -->
+    <a href="https://wa.me/56957891186?text=Hola%20Giovanni,%20quisiera%20cotizar%20mayorista" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 hover:bg-green-600 transition z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>

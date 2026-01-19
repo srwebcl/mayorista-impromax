@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F36719;
+  --color-secondary: #EA8E56;
+  --color-dark: #232628;
+  --color-medium: #545051;
+  --color-black: #000000;
+}
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    @apply text-[#232628] bg-gray-50;
+  }
+}
+
+/* Custom Components and Utilities */
+@layer components {
+
+  /* Utilidades de Color Personalizadas */
+  .text-primary {
+    @apply text-[#F36719];
+  }
+
+  .text-secondary {
+    @apply text-[#545051];
+  }
+
+  .text-dark {
+    @apply text-[#232628];
+  }
+
+  .bg-dark {
+    @apply bg-[#232628];
+  }
+
+  /* Gradiente Corporativo */
+  .bg-gradient-corporate {
+    background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+  }
+
+  /* Botones y Hovers */
+  .btn-primary {
+    background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #EA8E56 0%, #F36719 100%);
+    /* Invertir gradiente sutilmente */
+    box-shadow: 0 4px 15px rgba(243, 103, 25, 0.4);
+  }
+
+  .hover-text-primary:hover {
+    @apply text-[#F36719];
+  }
+
+  /* Fondo Hero */
+  .hero-bg {
+    /* Overlay oscuro usando el gris corporativo #232628 con opacidad */
+    background-image: linear-gradient(rgba(35, 38, 40, 0.92), rgba(35, 38, 40, 0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    @apply bg-cover bg-center;
+  }
+}
