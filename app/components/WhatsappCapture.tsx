@@ -61,12 +61,12 @@ export default function WhatsappCapture() {
                             <i className="fa-solid fa-xmark text-2xl"></i>
                         </button>
                         
-                        <div className="bg-green-500 p-8 text-white text-center">
+                        <div className="bg-[#ea6721] p-8 text-white text-center">
                             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i className="fa-brands fa-whatsapp text-4xl text-white"></i>
                             </div>
                             <h3 className="text-2xl font-black mb-1">Habla con un Experto</h3>
-                            <p className="text-green-50 text-sm">Completa tus datos para iniciar la atención por WhatsApp</p>
+                            <p className="text-orange-50 text-sm">Completa tus datos para iniciar la atención por WhatsApp</p>
                         </div>
 
                         <form onSubmit={handleSubmit} className="p-8 space-y-4">
@@ -75,7 +75,7 @@ export default function WhatsappCapture() {
                                 type="text" 
                                 placeholder="Nombre Completo" 
                                 required 
-                                className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-500/10 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all"
                             />
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input 
@@ -83,27 +83,27 @@ export default function WhatsappCapture() {
                                     type="email" 
                                     placeholder="Tu Email" 
                                     required 
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-500/10 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all"
                                 />
                                 <input 
                                     name="phone" 
                                     type="tel" 
                                     placeholder="Teléfono" 
                                     required 
-                                    className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-500/10 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all"
                                 />
                             </div>
                             <input 
                                 name="company" 
                                 type="text" 
                                 placeholder="Empresa (Opcional)" 
-                                className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-green-500 focus:ring-4 focus:ring-green-500/10 outline-none transition-all"
+                                className="w-full px-4 py-3 rounded-xl border border-gray-100 bg-gray-50 focus:bg-white focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all"
                             />
                             
                             <button 
                                 disabled={status === "loading"}
                                 type="submit" 
-                                className="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-500/20 flex items-center justify-center gap-2"
+                                className="w-full bg-[#ea6721] text-white font-black py-4 rounded-xl hover:bg-black transition-all shadow-lg shadow-[#ea6721]/20 flex items-center justify-center gap-2"
                             >
                                 {status === "loading" ? "Procesando..." : "INICIAR CHAT"}
                                 <i className="fa-solid fa-arrow-right"></i>

@@ -2,6 +2,11 @@
 
 Esta guía detalla el funcionamiento interno, las integraciones de API y la arquitectura de la plataforma B2B de Impromax.
 
+### Notas de Identidad Visual:
+*   **Color de Marca**: Naranja Oficial **`#ea6721`**.
+*   **Descripción Oficial**: "Expertos en Repuestos Eléctricos de Automatización Industrial".
+*   **Estética**: Negro Profundo y gradientes corporativos.
+
 ## 1. Arquitectura General
 *   **Framework**: Next.js 14+ (App Router).
 *   **Lenguaje**: TypeScript.

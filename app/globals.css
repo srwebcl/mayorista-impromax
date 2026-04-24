@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #F36719;
-  --color-secondary: #EA8E56;
-  --color-dark: #232628;
-  --color-medium: #545051;
+  --color-primary: #ea6721;
+  --color-secondary: #ff8c4a;
+  --color-dark: #111111;
+  --color-medium: #333333;
   --color-black: #000000;
 }
 
@@ -16,7 +16,7 @@ html {
 
 @layer base {
   body {
-    @apply text-[#232628] bg-gray-50;
+    @apply text-[#111111] bg-white;
   }
 }
 
@@ -25,40 +25,40 @@ html {
 
   /* Utilidades de Color Personalizadas */
   .text-primary {
-    @apply text-[#F36719];
+    @apply text-[#ea6721];
   }
 
   .text-secondary {
-    @apply text-[#545051];
+    @apply text-[#333333];
   }
 
   .text-dark {
-    @apply text-[#232628];
+    @apply text-[#111111];
   }
 
   .bg-dark {
-    @apply bg-[#232628];
+    @apply bg-[#111111];
   }
 
   /* Gradiente Corporativo */
   .bg-gradient-corporate {
-    background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+    background: linear-gradient(135deg, #ea6721 0%, #000000 100%);
   }
 
   /* Botones y Hovers */
   .btn-primary {
-    background: linear-gradient(135deg, #F36719 0%, #EA8E56 100%);
+    background: linear-gradient(135deg, #ea6721 0%, #ff8c4a 100%);
     @apply transition-all duration-300 ease-in-out;
   }
 
   .btn-primary:hover {
-    background: linear-gradient(135deg, #EA8E56 0%, #F36719 100%);
+    background: linear-gradient(135deg, #ff8c4a 0%, #ea6721 100%);
     /* Invertir gradiente sutilmente */
-    box-shadow: 0 4px 15px rgba(243, 103, 25, 0.4);
+    box-shadow: 0 4px 15px rgba(234, 103, 33, 0.4);
   }
 
   .hover-text-primary:hover {
-    @apply text-[#F36719];
+    @apply text-[#ea6721];
   }
 
   /* Fondo Hero */

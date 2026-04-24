@@ -48,34 +48,34 @@ export default function ContactForm() {
                     type="text" 
                     placeholder="Tu Nombre" 
                     required 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F36719] focus:ring-2 focus:ring-orange-50 outline-none transition-all bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all bg-white"
                 />
                 <input 
                     name="email" 
                     type="email" 
                     placeholder="Tu Email" 
                     required 
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F36719] focus:ring-2 focus:ring-orange-50 outline-none transition-all bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all bg-white"
                 />
             </div>
             <input 
                 name="company" 
                 type="text" 
                 placeholder="Empresa" 
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F36719] focus:ring-2 focus:ring-orange-50 outline-none transition-all bg-white"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all bg-white"
             />
             <textarea 
                 name="message" 
                 rows={4} 
                 placeholder="¿Cómo podemos ayudarte?" 
                 required 
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F36719] focus:ring-2 focus:ring-orange-50 outline-none transition-all bg-white resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ea6721] focus:ring-4 focus:ring-[#ea6721]/10 outline-none transition-all bg-white resize-none"
             ></textarea>
             
             <button 
                 disabled={status === "loading"}
                 type="submit" 
-                className="w-full bg-[#232628] text-white font-bold py-4 rounded-xl hover:bg-[#F36719] transition-all duration-300 shadow-lg shadow-gray-200 hover:shadow-orange-200 flex items-center justify-center gap-2 group"
+                className="w-full bg-[#111] text-white font-black py-4 rounded-xl hover:bg-[#ea6721] transition-all duration-300 shadow-xl shadow-gray-100 hover:shadow-[#ea6721]/30 flex items-center justify-center gap-2 group"
             >
                 {status === "loading" ? "Enviando..." : (
                     <>

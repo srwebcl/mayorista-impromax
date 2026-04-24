@@ -24,15 +24,15 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="hidden md:flex items-center space-x-6 font-medium text-sm text-gray-300">
-                    <Link href="#beneficios" className="hover:text-[#F36719] transition">BENEFICIOS</Link>
-                    <Link href="#productos" className="hover:text-[#F36719] transition">PRODUCTOS</Link>
-                    <Link href="#contacto" className="hover:text-[#F36719] transition">CONTACTO</Link>
+                    <Link href="#beneficios" className="hover:text-[#ea6721] transition">BENEFICIOS</Link>
+                    <Link href="#productos" className="hover:text-[#ea6721] transition">PRODUCTOS</Link>
+                    <Link href="#contacto" className="hover:text-[#ea6721] transition">CONTACTO</Link>
                 </div>
                 <div>
                     {/* Botón CTA Header: Naranja Corporativo */}
                     <button 
                         onClick={() => window.dispatchEvent(new CustomEvent('open-whatsapp-capture'))}
-                        className="bg-[#F36719] hover:bg-[#EA8E56] text-white px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2 shadow-lg"
+                        className="bg-[#ea6721] hover:bg-[#ff8c4a] text-white px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2 shadow-lg"
                     >
                         <i className="fa-brands fa-whatsapp text-lg"></i> <span className="hidden sm:inline">Hablar con Giovanni</span>
                     </button>

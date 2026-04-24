@@ -18,24 +18,24 @@ export default function Home() {
 
               {/* Left Content */}
               <div className="lg:w-1/2 text-white">
-                <div className="inline-block bg-[#F36719] border border-[#F36719] text-white rounded-full px-4 py-1 text-sm font-bold mb-6 shadow-lg">
+                <div className="inline-block bg-[#ea6721] border border-[#ea6721] text-white rounded-full px-4 py-1 text-sm font-bold mb-6 shadow-lg">
                   🚀 Distribuidor Líder en Automatización
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-                  Aumenta tu rentabilidad con precios <span className="text-[#F36719]">Mayoristas</span>
+                  Aumenta tu rentabilidad con precios <span className="text-[#ea6721]">Mayoristas</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg font-light">
-                  Accede al stock más completo de Variadores de Frecuencia, PLC y Control Industrial. Despacho inmediato a todo Chile.
+                  Expertos en Repuestos Eléctricos de Automatización Industrial. Accede al stock más completo de Variadores de Frecuencia, PLC y Control Industrial.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 text-sm font-medium text-gray-200 mb-8">
                   <div className="flex items-center gap-2">
-                    <i className="fa-solid fa-check-circle text-[#F36719]"></i> Stock Garantizado
+                    <i className="fa-solid fa-check-circle text-[#ea6721]"></i> Stock Garantizado
                   </div>
                   <div className="flex items-center gap-2">
-                    <i className="fa-solid fa-check-circle text-[#F36719]"></i> Asesoría Técnica
+                    <i className="fa-solid fa-check-circle text-[#ea6721]"></i> Asesoría Técnica
                   </div>
                   <div className="flex items-center gap-2">
-                    <i className="fa-solid fa-check-circle text-[#F36719]"></i> envios garantizados
+                    <i className="fa-solid fa-check-circle text-[#ea6721]"></i> envios garantizados
                   </div>
                 </div>
               </div>
@@ -165,25 +165,25 @@ export default function Home() {
             </div>
 
             {/* CTA Minorista Premium */}
-            <div className="bg-[#111] rounded-[2rem] shadow-2xl overflow-hidden relative flex flex-col md:flex-row items-center mt-12 group">
+            <div className="bg-[#0a0a0a] rounded-[2rem] shadow-2xl overflow-hidden relative flex flex-col md:flex-row items-center mt-12 group border border-white/5">
               {/* Background Glows */}
               <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                  <div className="absolute -top-[50%] -left-[10%] w-[70%] h-[150%] bg-[#F36719]/20 blur-[120px] rounded-full mix-blend-screen group-hover:bg-[#F36719]/30 transition-colors duration-700"></div>
-                  <div className="absolute bottom-[0%] -right-[10%] w-[50%] h-[100%] bg-blue-600/20 blur-[100px] rounded-full mix-blend-screen group-hover:bg-blue-600/30 transition-colors duration-700"></div>
+                  <div className="absolute -top-[50%] -left-[10%] w-[70%] h-[150%] bg-[#ea6721]/15 blur-[120px] rounded-full mix-blend-screen group-hover:bg-[#ea6721]/25 transition-colors duration-700"></div>
+                  <div className="absolute bottom-[0%] -right-[10%] w-[50%] h-[100%] bg-white/5 blur-[100px] rounded-full mix-blend-screen group-hover:bg-[#ea6721]/10 transition-colors duration-700"></div>
               </div>
 
               <div className="p-12 md:p-16 md:w-2/3 relative z-10">
-                <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold px-4 py-1.5 rounded-full text-xs mb-6 uppercase tracking-widest">
-                  <span className="w-2 h-2 rounded-full bg-blue-400 mr-2 animate-pulse"></span>
+                <div className="inline-flex items-center bg-[#ea6721]/20 backdrop-blur-md border border-[#ea6721]/30 text-[#ea6721] font-bold px-4 py-1.5 rounded-full text-xs mb-6 uppercase tracking-widest">
+                  <span className="w-2 h-2 rounded-full bg-[#ea6721] mr-2 animate-pulse"></span>
                   Para Usuarios Finales
                 </div>
                 <h3 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-                  ¿Buscas repuestos <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-[#F36719]">al detalle</span>?
+                  ¿Buscas repuestos <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ea6721]">al detalle</span>?
                 </h3>
-                <p className="text-gray-300 mb-10 text-lg md:text-xl font-light max-w-xl leading-relaxed">
+                <p className="text-gray-400 mb-10 text-lg md:text-xl font-light max-w-xl leading-relaxed">
                   Accede a nuestra tienda online minorista. Compra unidades individuales con despacho a todo Chile, integración con Webpay y carrito de compras automatizado.
                 </p>
-                <a href="https://www.impromax.cl/catalogo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-white text-[#111] font-black py-4 px-8 rounded-xl hover:bg-[#F36719] hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(243,103,25,0.5)] transform hover:-translate-y-1">
+                <a href="https://www.impromax.cl/catalogo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-[#ea6721] text-white font-black py-4 px-8 rounded-xl hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_30px_rgba(234,103,33,0.3)] hover:shadow-[0_0_50px_rgba(234,103,33,0.6)] transform hover:-translate-y-1">
                   Visitar Tienda Minorista
                   <i className="fa-solid fa-arrow-up-right-from-square ml-3 text-sm group-hover:rotate-12 transition-transform"></i>
                 </a>
@@ -191,8 +191,8 @@ export default function Home() {
               <div className="w-full md:w-1/3 h-64 md:h-full relative flex items-center justify-center p-8 z-10">
                 <i className="fa-solid fa-cart-shopping text-[140px] text-white/5 drop-shadow-2xl transform -rotate-12 group-hover:rotate-0 group-hover:scale-110 transition-all duration-700"></i>
                 {/* Decorative floating elements */}
-                <div className="absolute top-1/4 right-1/4 bg-blue-500/20 backdrop-blur-xl border border-white/10 w-16 h-16 rounded-2xl rotate-12 animate-[spin_10s_linear_infinite]"></div>
-                <div className="absolute bottom-1/4 left-1/4 bg-[#F36719]/20 backdrop-blur-xl border border-white/10 w-24 h-24 rounded-full -rotate-12 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/4 right-1/4 bg-[#ea6721]/10 backdrop-blur-xl border border-white/10 w-16 h-16 rounded-2xl rotate-12 animate-[spin_10s_linear_infinite]"></div>
+                <div className="absolute bottom-1/4 left-1/4 bg-white/5 backdrop-blur-xl border border-white/10 w-24 h-24 rounded-full -rotate-12 animate-pulse" style={{ animationDelay: '1s' }}></div>
               </div>
             </div>
           </div>
