@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LeadForm from "./components/LeadForm";
 import ProductCard from "./components/ProductCard";
+import ContactForm from "./components/ContactForm";
+import WhatsappCapture from "./components/WhatsappCapture";
 
 export default function Home() {
   return (
@@ -258,14 +260,73 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Contact Section */}
+        <section id="contacto" className="py-20 bg-gray-50 border-t border-gray-200">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
+              {/* Info Column */}
+              <div className="md:w-5/12 bg-[#232628] p-10 md:p-12 text-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#F36719] rounded-full mix-blend-multiply filter blur-[100px] opacity-20 -mr-32 -mt-32"></div>
+                
+                <h2 className="text-3xl font-black mb-6 relative z-10">¿Listo para escalar tu negocio?</h2>
+                <p className="text-gray-400 mb-10 relative z-10 font-light leading-relaxed">
+                  Nuestro equipo de expertos está listo para asesorarte en la mejor solución de automatización para tu empresa.
+                </p>
+                
+                <div className="space-y-6 relative z-10">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
+                      <i className="fa-solid fa-phone text-[#F36719]"></i>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Llámanos</p>
+                      <p className="font-bold text-lg">+56 9 5789 1186</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
+                      <i className="fa-solid fa-envelope text-[#F36719]"></i>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Email</p>
+                      <p className="font-bold text-lg">ventas@impromax.cl</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
+                      <i className="fa-solid fa-location-dot text-[#F36719]"></i>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Ubicación</p>
+                      <p className="font-bold text-lg">Santiago - Lampa</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-12 pt-12 border-t border-white/10 relative z-10">
+                  <p className="text-sm text-gray-500 mb-4 uppercase tracking-widest font-bold italic">Impromax Mayorista</p>
+                  <p className="text-xs text-gray-600">Sargento Aldea 830, Paseo Las Palmeras, Local 13</p>
+                </div>
+              </div>
+              
+              {/* Form Column */}
+              <div className="md:w-7/12 p-10 md:p-12 flex flex-col justify-center">
+                <div className="mb-8">
+                  <span className="text-[#F36719] font-black uppercase tracking-widest text-xs mb-2 block">Contacto Directo</span>
+                  <h3 className="text-3xl font-black text-gray-900 mb-2">Envíanos un mensaje</h3>
+                  <p className="text-gray-500">Cuéntanos sobre tu proyecto o consulta mayorista.</p>
+                </div>
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
 
-      {/* WhatsApp Floating Button */}
-      <a href="https://wa.me/56957891186?text=Hola%20Giovanni,%20quisiera%20cotizar%20mayorista" className="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 hover:bg-green-600 transition z-50">
-        <i className="fa-brands fa-whatsapp"></i>
-      </a>
+      <WhatsappCapture />
     </>
   );
 }

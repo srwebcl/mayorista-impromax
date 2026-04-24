@@ -37,12 +37,15 @@ export default function ProductCard({ title, description, iconClass, imageUrl, d
                 {description && <p className="text-sm text-[#545051] mb-4 flex-1">{description}</p>}
                 {!description && <div className="flex-1"></div>}
                 <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
-                    <a href="https://wa.me/56957891186?text=Hola%20Giovanni,%20quiero%20cotizar%20la%20categoría%20mayorista" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-[#F36719] text-sm font-black hover:text-[#EA8E56] transition-colors group/link w-full">
+                    <button 
+                        onClick={() => window.dispatchEvent(new CustomEvent('open-whatsapp-capture'))}
+                        className="inline-flex items-center text-[#F36719] text-sm font-black hover:text-[#EA8E56] transition-colors group/link w-full text-left"
+                    >
                         Cotizar Mayorista 
                         <span className="ml-auto bg-green-50 text-green-600 w-8 h-8 rounded-full flex items-center justify-center group-hover/link:bg-green-500 group-hover/link:text-white group-hover/link:shadow-lg group-hover/link:shadow-green-500/40 transition-all duration-300">
                             <i className="fa-brands fa-whatsapp text-lg"></i>
                         </span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

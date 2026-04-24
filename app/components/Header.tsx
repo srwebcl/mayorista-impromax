@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -28,9 +30,12 @@ export default function Header() {
                 </div>
                 <div>
                     {/* Botón CTA Header: Naranja Corporativo */}
-                    <a href="https://wa.me/56957891186" target="_blank" className="bg-[#F36719] hover:bg-[#EA8E56] text-white px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2 shadow-lg">
+                    <button 
+                        onClick={() => window.dispatchEvent(new CustomEvent('open-whatsapp-capture'))}
+                        className="bg-[#F36719] hover:bg-[#EA8E56] text-white px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2 shadow-lg"
+                    >
                         <i className="fa-brands fa-whatsapp text-lg"></i> <span className="hidden sm:inline">Hablar con Giovanni</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </header>
