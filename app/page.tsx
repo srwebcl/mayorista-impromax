@@ -53,11 +53,11 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <p className="text-center text-[#545051] text-sm font-semibold uppercase tracking-widest mb-6">Trabajamos con las mejores marcas del mercado</p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i className="fa-solid fa-square"></i> SCHNEIDER</div>
-              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i className="fa-solid fa-bolt"></i> MEAN WELL</div>
-              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i className="fa-solid fa-microchip"></i> SUSWE</div>
-              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i className="fa-solid fa-industry"></i> YUANSHIN</div>
-              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#F36719] transition"><i className="fa-solid fa-plug"></i> OMCH</div>
+              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#ea6721] transition"><i className="fa-solid fa-square"></i> SCHNEIDER</div>
+              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#ea6721] transition"><i className="fa-solid fa-bolt"></i> MEAN WELL</div>
+              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#ea6721] transition"><i className="fa-solid fa-microchip"></i> SUSWE</div>
+              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#ea6721] transition"><i className="fa-solid fa-industry"></i> YUANSHIN</div>
+              <div className="text-xl font-bold text-[#232628] flex items-center gap-2 hover:text-[#ea6721] transition"><i className="fa-solid fa-plug"></i> OMCH</div>
             </div>
           </div>
         </section>
@@ -73,8 +73,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {/* Feature 1 */}
               <div className="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
-                <div className="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
-                  <i className="fa-solid fa-truck-fast text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                <div className="w-16 h-16 bg-[#ea6721]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#ea6721] transition-colors duration-300">
+                  <i className="fa-solid fa-truck-fast text-2xl text-[#ea6721] group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#232628]">Logística Nacional Rápida</h3>
                 <p className="text-[#545051] text-sm leading-relaxed">
@@ -84,8 +84,8 @@ export default function Home() {
 
               {/* Feature 2 */}
               <div className="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
-                <div className="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
-                  <i className="fa-solid fa-tags text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                <div className="w-16 h-16 bg-[#ea6721]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#ea6721] transition-colors duration-300">
+                  <i className="fa-solid fa-tags text-2xl text-[#ea6721] group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#232628]">Precios Competitivos</h3>
                 <p className="text-[#545051] text-sm leading-relaxed">
@@ -95,8 +95,8 @@ export default function Home() {
 
               {/* Feature 3 */}
               <div className="p-8 border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white text-center group">
-                <div className="w-16 h-16 bg-[#F36719]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#F36719] transition-colors duration-300">
-                  <i className="fa-solid fa-headset text-2xl text-[#F36719] group-hover:text-white transition-colors"></i>
+                <div className="w-16 h-16 bg-[#ea6721]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#ea6721] transition-colors duration-300">
+                  <i className="fa-solid fa-headset text-2xl text-[#ea6721] group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#232628]">Atención Personalizada</h3>
                 <p className="text-[#545051] text-sm leading-relaxed">
@@ -112,10 +112,10 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <span className="text-[#F36719] font-bold uppercase tracking-wider text-sm">Nuestras Categorías</span>
+                <span className="text-[#ea6721] font-bold uppercase tracking-wider text-sm">Nuestras Categorías</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#232628] mt-2">Explora nuestro catálogo mayorista</h2>
               </div>
-              <a href="#productos" className="hidden md:inline-flex items-center text-[#F36719] font-bold hover:text-[#EA8E56] transition">
+              <a href="#productos" className="hidden md:inline-flex items-center text-[#ea6721] font-bold hover:text-[#ff8c4a] transition">
                 Ver catálogo completo <i className="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
@@ -178,10 +178,10 @@ export default function Home() {
                   Para Usuarios Finales
                 </div>
                 <h3 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-                  ¿Buscas repuestos <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ea6721]">al detalle</span>?
+                  ¿Buscas comprar por <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ea6721]">unidades individuales</span>?
                 </h3>
                 <p className="text-gray-400 mb-10 text-lg md:text-xl font-light max-w-xl leading-relaxed">
-                  Accede a nuestra tienda online minorista. Compra unidades individuales con despacho a todo Chile, integración con Webpay y carrito de compras automatizado.
+                  Si no necesitas comprar por volumen y buscas despacho inmediato de productos específicos, visita nuestra tienda minorista con carrito de compras y Webpay.
                 </p>
                 <a href="https://www.impromax.cl/catalogo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-[#ea6721] text-white font-black py-4 px-8 rounded-xl hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_30px_rgba(234,103,33,0.3)] hover:shadow-[0_0_50px_rgba(234,103,33,0.6)] transform hover:-translate-y-1">
                   Visitar Tienda Minorista
@@ -231,7 +231,7 @@ export default function Home() {
               <details className="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
                 <summary className="flex justify-between items-center font-bold text-[#232628] list-none">
                   <span>¿Cuál es el monto mínimo de compra mayorista?</span>
-                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#ea6721]"></i></span>
                 </summary>
                 <p className="text-[#545051] mt-4 leading-relaxed">
                   Para acceder a la primera escala de precios mayoristas, no exigimos un monto mínimo elevado, pero sí la validación comercial como empresa del rubro o técnico integrador. Completa el formulario para evaluar tu caso.
@@ -241,7 +241,7 @@ export default function Home() {
               <details className="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
                 <summary className="flex justify-between items-center font-bold text-[#232628] list-none">
                   <span>¿Realizan facturación a 30 días?</span>
-                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#ea6721]"></i></span>
                 </summary>
                 <p className="text-[#545051] mt-4 leading-relaxed">
                   Sí, disponemos de líneas de crédito para clientes recurrentes tras una evaluación comercial. Inicialmente trabajamos con transferencia o Webpay.
@@ -251,7 +251,7 @@ export default function Home() {
               <details className="group bg-gray-50 p-6 rounded-lg cursor-pointer hover:bg-orange-50 transition duration-300">
                 <summary className="flex justify-between items-center font-bold text-[#232628] list-none">
                   <span>¿Tienen tienda física para retiro?</span>
-                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#F36719]"></i></span>
+                  <span className="transition group-open:rotate-180"><i className="fa-solid fa-chevron-down text-[#ea6721]"></i></span>
                 </summary>
                 <p className="text-[#545051] mt-4 leading-relaxed">
                   Sí, nuestra casa matriz y bodega está ubicada en Sargento Aldea 830, Paseo Las Palmeras, Local 13, Lampa, RM. Puedes retirar tus pedidos coordinando con tu ejecutivo.
@@ -267,17 +267,17 @@ export default function Home() {
             <div className="max-w-5xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
               {/* Info Column */}
               <div className="md:w-5/12 bg-[#232628] p-10 md:p-12 text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-[#F36719] rounded-full mix-blend-multiply filter blur-[100px] opacity-20 -mr-32 -mt-32"></div>
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#ea6721] rounded-full mix-blend-multiply filter blur-[100px] opacity-20 -mr-32 -mt-32"></div>
                 
-                <h2 className="text-3xl font-black mb-6 relative z-10">¿Listo para escalar tu negocio?</h2>
+                <h2 className="text-3xl font-black mb-6 relative z-10">Paga menos por los mismos productos</h2>
                 <p className="text-gray-400 mb-10 relative z-10 font-light leading-relaxed">
-                  Nuestro equipo de expertos está listo para asesorarte en la mejor solución de automatización para tu empresa.
+                  Activamos precios mayoristas con mejores márgenes para clientes que ya confían en Impromax. Más simple, más rápido y con stock inmediato.
                 </p>
                 
                 <div className="space-y-6 relative z-10">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
-                      <i className="fa-solid fa-phone text-[#F36719]"></i>
+                      <i className="fa-solid fa-phone text-[#ea6721]"></i>
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Llámanos</p>
@@ -286,7 +286,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
-                      <i className="fa-solid fa-envelope text-[#F36719]"></i>
+                      <i className="fa-solid fa-envelope text-[#ea6721]"></i>
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Email</p>
@@ -295,7 +295,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
-                      <i className="fa-solid fa-location-dot text-[#F36719]"></i>
+                      <i className="fa-solid fa-location-dot text-[#ea6721]"></i>
                     </div>
                     <div>
                       <p className="text-xs text-gray-500 uppercase font-bold tracking-widest mb-0.5">Ubicación</p>
@@ -313,7 +313,7 @@ export default function Home() {
               {/* Form Column */}
               <div className="md:w-7/12 p-10 md:p-12 flex flex-col justify-center">
                 <div className="mb-8">
-                  <span className="text-[#F36719] font-black uppercase tracking-widest text-xs mb-2 block">Contacto Directo</span>
+                  <span className="text-[#ea6721] font-black uppercase tracking-widest text-xs mb-2 block">Contacto Directo</span>
                   <h3 className="text-3xl font-black text-gray-900 mb-2">Envíanos un mensaje</h3>
                   <p className="text-gray-500">Cuéntanos sobre tu proyecto o consulta mayorista.</p>
                 </div>

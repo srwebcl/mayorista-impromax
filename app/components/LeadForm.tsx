@@ -79,7 +79,7 @@ export default function LeadForm() {
                     </div>
                 </div>
                 
-                <button disabled={status === "loading"} type="submit" className="w-full mt-4 bg-gradient-to-r from-[#F36719] to-[#EA8E56] text-white font-black py-4 md:py-5 rounded-xl shadow-[0_0_20px_rgba(243,103,25,0.4)] hover:shadow-[0_0_35px_rgba(243,103,25,0.6)] transition-all duration-300 transform hover:-translate-y-1 active:scale-95 text-lg tracking-wide flex items-center justify-center group disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none">
+                <button disabled={status === "loading"} type="submit" className="w-full mt-4 bg-gradient-to-r from-[#ea6721] to-[#ff8c4a] text-white font-black py-4 md:py-5 rounded-xl shadow-[0_0_20px_rgba(243,103,25,0.4)] hover:shadow-[0_0_35px_rgba(243,103,25,0.6)] transition-all duration-300 transform hover:-translate-y-1 active:scale-95 text-lg tracking-wide flex items-center justify-center group disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none">
                     {status === "loading" ? "ENVIANDO..." : (
                         <>
                             SOLICITAR COTIZACIÓN <i className="fa-solid fa-paper-plane ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
