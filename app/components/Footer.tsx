@@ -56,8 +56,16 @@ export default function Footer() {
                             <i className="fa-solid fa-location-dot text-[#F36719] mr-2"></i>
                             Sargento Aldea 830, Paseo Las Palmeras, Local 13, Santiago - Lampa
                         </p>
-                        <div className="w-full h-40 bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700">
-                            <span className="text-xs text-gray-500 uppercase font-semibold tracking-wider">[ Mapa de Google ]</span>
+                        <div className="w-full h-48 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.9697967919864!2d-70.8710328!3d-33.2410314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662b9a7b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sSargento%20Aldea%20830%2C%20Lampa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1713962635489!5m2!1ses!2scl" 
+                                width="100%" 
+                                height="100%" 
+                                style={{ border: 0 }} 
+                                allowFullScreen 
+                                loading="lazy" 
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

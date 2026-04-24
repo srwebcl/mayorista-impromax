@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 <div className="flex items-center">
                     {/* Logo con filtro para verse blanco sobre fondo oscuro */}
-                    <Link href="#" className="flex items-center gap-2">
+                    <Link href="#inicio" className="flex items-center gap-2">
                         <div className="relative h-12 w-auto">
                             <Image
                                 src="/client_logo.png"
@@ -22,9 +22,9 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="hidden md:flex items-center space-x-6 font-medium text-sm text-gray-300">
-                    <Link href="#beneficios" className="hover:text-[#F36719] transition">Beneficios</Link>
-                    <Link href="#productos" className="hover:text-[#F36719] transition">Catálogo</Link>
-                    <Link href="#contacto" className="hover:text-[#F36719] transition">Contacto</Link>
+                    <Link href="#beneficios" className="hover:text-[#F36719] transition">BENEFICIOS</Link>
+                    <Link href="#productos" className="hover:text-[#F36719] transition">PRODUCTOS</Link>
+                    <Link href="#contacto" className="hover:text-[#F36719] transition">CONTACTO</Link>
                 </div>
                 <div>
                     {/* Botón CTA Header: Naranja Corporativo */}

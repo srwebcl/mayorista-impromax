@@ -16,7 +16,7 @@ export default function Home() {
 
               {/* Left Content */}
               <div className="lg:w-1/2 text-white">
-                <div className="inline-block bg-[#F36719] bg-opacity-20 border border-[#F36719] text-[#F36719] rounded-full px-4 py-1 text-sm font-bold mb-6 backdrop-blur-sm">
+                <div className="inline-block bg-[#F36719] border border-[#F36719] text-white rounded-full px-4 py-1 text-sm font-bold mb-6 shadow-lg">
                   🚀 Distribuidor Líder en Automatización
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
@@ -33,7 +33,7 @@ export default function Home() {
                     <i className="fa-solid fa-check-circle text-[#F36719]"></i> Asesoría Técnica
                   </div>
                   <div className="flex items-center gap-2">
-                    <i className="fa-solid fa-check-circle text-[#F36719]"></i> Envíos en 24hrs
+                    <i className="fa-solid fa-check-circle text-[#F36719]"></i> envios garantizados
                   </div>
                 </div>
               </div>
@@ -110,40 +110,88 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-end mb-12">
               <div>
-                <span className="text-[#F36719] font-bold uppercase tracking-wider text-sm">Nuestro Catálogo</span>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#232628] mt-2">Productos de Alta Rotación</h2>
+                <span className="text-[#F36719] font-bold uppercase tracking-wider text-sm">Nuestras Categorías</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#232628] mt-2">Explora nuestro catálogo mayorista</h2>
               </div>
-              <a href="#inicio" className="hidden md:inline-flex items-center text-[#F36719] font-bold hover:text-[#EA8E56] transition">
+              <a href="#productos" className="hidden md:inline-flex items-center text-[#F36719] font-bold hover:text-[#EA8E56] transition">
                 Ver catálogo completo <i className="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-16">
               <ProductCard
-                title="Variadores de Frecuencia"
-                description="Trifásicos 380v y Monofásicos. Desde 0.75KW hasta 18.5kW."
-                iconClass="fa-solid fa-gauge-high"
+                title="Variadores de Frecuencia y Controladores de Motores"
+                imageUrl="/images/variador-de-frecuencia.webp"
                 discount="-15% OFF"
               />
               <ProductCard
-                title="Fuentes de Poder"
-                description="Mean Well y genéricas. 24VDC, Riel DIN. Alta eficiencia."
-                iconClass="fa-solid fa-car-battery"
+                title="Relés"
+                imageUrl="/images/reles.webp"
               />
               <ProductCard
-                title="Control Industrial"
-                description="PLC, HMI, Relés y Sensores. Automatización completa."
-                iconClass="fa-solid fa-microchip"
+                title="Fuentes de Poder para Automatización Industrial"
+                imageUrl="/images/fuentes-de-poder.webp"
               />
               <ProductCard
-                title="Neumática"
-                description="Conectores, mangueras, válvulas y cilindros."
-                iconClass="fa-solid fa-wind"
+                title="Interruptores y finales de carrera"
+                imageUrl="/images/interruptores-finales-carrera.webp"
+              />
+              <ProductCard
+                title="Control de Temperatura"
+                imageUrl="/images/control-temperatura.webp"
+              />
+              <ProductCard
+                title="Fusibles, Bornes y Terminales"
+                imageUrl="/images/fusibles.webp"
+              />
+              <ProductCard
+                title="Electrónica de control"
+                imageUrl="/images/electronica-control.webp"
+              />
+              <ProductCard
+                title="Neumática y conectores"
+                imageUrl="/images/neumatica.webp"
+              />
+              <ProductCard
+                title="Herrajeria"
+                imageUrl="/images/herrajeria.webp"
+              />
+              <ProductCard
+                title="Pernos y Tuercas"
+                imageUrl="/images/pernos.webp"
               />
             </div>
 
-            <div className="mt-8 text-center md:hidden">
-              <a href="#inicio" className="inline-block bg-white border border-[#F36719] text-[#F36719] font-bold py-3 px-8 rounded-lg hover:bg-orange-50 transition">Ver todo el catálogo</a>
+            {/* CTA Minorista Premium */}
+            <div className="bg-[#111] rounded-[2rem] shadow-2xl overflow-hidden relative flex flex-col md:flex-row items-center mt-12 group">
+              {/* Background Glows */}
+              <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                  <div className="absolute -top-[50%] -left-[10%] w-[70%] h-[150%] bg-[#F36719]/20 blur-[120px] rounded-full mix-blend-screen group-hover:bg-[#F36719]/30 transition-colors duration-700"></div>
+                  <div className="absolute bottom-[0%] -right-[10%] w-[50%] h-[100%] bg-blue-600/20 blur-[100px] rounded-full mix-blend-screen group-hover:bg-blue-600/30 transition-colors duration-700"></div>
+              </div>
+
+              <div className="p-12 md:p-16 md:w-2/3 relative z-10">
+                <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold px-4 py-1.5 rounded-full text-xs mb-6 uppercase tracking-widest">
+                  <span className="w-2 h-2 rounded-full bg-blue-400 mr-2 animate-pulse"></span>
+                  Para Usuarios Finales
+                </div>
+                <h3 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+                  ¿Buscas repuestos <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-[#F36719]">al detalle</span>?
+                </h3>
+                <p className="text-gray-300 mb-10 text-lg md:text-xl font-light max-w-xl leading-relaxed">
+                  Accede a nuestra tienda online minorista. Compra unidades individuales con despacho a todo Chile, integración con Webpay y carrito de compras automatizado.
+                </p>
+                <a href="https://www.impromax.cl/catalogo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-white text-[#111] font-black py-4 px-8 rounded-xl hover:bg-[#F36719] hover:text-white transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(243,103,25,0.5)] transform hover:-translate-y-1">
+                  Visitar Tienda Minorista
+                  <i className="fa-solid fa-arrow-up-right-from-square ml-3 text-sm group-hover:rotate-12 transition-transform"></i>
+                </a>
+              </div>
+              <div className="w-full md:w-1/3 h-64 md:h-full relative flex items-center justify-center p-8 z-10">
+                <i className="fa-solid fa-cart-shopping text-[140px] text-white/5 drop-shadow-2xl transform -rotate-12 group-hover:rotate-0 group-hover:scale-110 transition-all duration-700"></i>
+                {/* Decorative floating elements */}
+                <div className="absolute top-1/4 right-1/4 bg-blue-500/20 backdrop-blur-xl border border-white/10 w-16 h-16 rounded-2xl rotate-12 animate-[spin_10s_linear_infinite]"></div>
+                <div className="absolute bottom-1/4 left-1/4 bg-[#F36719]/20 backdrop-blur-xl border border-white/10 w-24 h-24 rounded-full -rotate-12 animate-pulse" style={{ animationDelay: '1s' }}></div>
+              </div>
             </div>
           </div>
         </section>
@@ -157,8 +205,8 @@ export default function Home() {
                 <div className="text-orange-100 text-sm uppercase font-semibold">Clientes Felices</div>
               </div>
               <div>
-                <div className="text-4xl font-black mb-2">24h</div>
-                <div className="text-orange-100 text-sm uppercase font-semibold">Tiempo de Despacho</div>
+                <div className="text-4xl font-black mb-2">Despacho</div>
+                <div className="text-orange-100 text-sm uppercase font-semibold">envios garantizados</div>
               </div>
               <div>
                 <div className="text-4xl font-black mb-2">100%</div>
