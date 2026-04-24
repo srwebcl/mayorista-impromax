@@ -43,12 +43,23 @@ export default function WhatsappCapture() {
     return (
         <>
             {/* Floating Button (Trigger) */}
-            <button 
-                onClick={() => setIsOpen(true)}
-                className="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 hover:bg-green-600 transition-all z-50"
-            >
-                <i className="fa-brands fa-whatsapp"></i>
-            </button>
+            <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end group">
+                {/* Tooltip / Label on Hover */}
+                <div className="mb-2 bg-white text-[#111] px-4 py-2 rounded-xl shadow-xl text-xs font-black tracking-wide opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pointer-events-none border border-gray-100">
+                    ¿Dudas? Habla con Giovanni 
+                    <div className="absolute -bottom-1 right-5 w-2 h-2 bg-white rotate-45 border-r border-b border-gray-100"></div>
+                </div>
+
+                <button 
+                    onClick={() => setIsOpen(true)}
+                    className="relative bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 hover:bg-green-600 transition-all active:scale-95 overflow-visible"
+                >
+                    {/* Subtle Pulse Ring */}
+                    <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20 group-hover:opacity-40"></span>
+                    
+                    <i className="fa-brands fa-whatsapp relative z-10"></i>
+                </button>
+            </div>
 
             {/* Modal */}
             {isOpen && (

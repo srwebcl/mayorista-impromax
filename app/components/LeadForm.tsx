@@ -45,8 +45,8 @@ export default function LeadForm() {
             {/* Glow effect */}
             <div className="absolute -top-20 -right-20 w-80 h-80 bg-[#ea6721] rounded-full mix-blend-screen filter blur-[120px] opacity-50 pointer-events-none"></div>
             
-            <h3 className="text-3xl font-black text-white mb-3 relative z-10">Cotiza al Mayor</h3>
-            <p className="text-gray-300 mb-8 text-[15px] font-light relative z-10 leading-relaxed">Completa tus datos y nuestro equipo te contactará para abrir tu cuenta comercial.</p>
+            <h3 className="text-3xl font-black text-white mb-3 relative z-10">Accede a Precios Mayoristas</h3>
+            <p className="text-gray-300 mb-8 text-[15px] font-light relative z-10 leading-relaxed">Paga menos por los mismos productos y aumenta tus márgenes de ganancia en cada compra.</p>
 
             <form id="leadForm" className="space-y-5 relative z-10" onSubmit={handleSubmit}>
                 <div>
@@ -82,7 +82,7 @@ export default function LeadForm() {
                 <button disabled={status === "loading"} type="submit" className="w-full mt-4 bg-gradient-to-r from-[#ea6721] to-[#ff8c4a] text-white font-black py-4 md:py-5 rounded-xl shadow-[0_0_20px_rgba(243,103,25,0.4)] hover:shadow-[0_0_35px_rgba(243,103,25,0.6)] transition-all duration-300 transform hover:-translate-y-1 active:scale-95 text-lg tracking-wide flex items-center justify-center group disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none">
                     {status === "loading" ? "ENVIANDO..." : (
                         <>
-                            SOLICITAR COTIZACIÓN <i className="fa-solid fa-paper-plane ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            ACTIVAR PRECIOS MAYORISTAS <i className="fa-solid fa-paper-plane ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
                         </>
                     )}
                 </button>

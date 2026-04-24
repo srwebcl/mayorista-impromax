@@ -25,7 +25,7 @@ export default function Home() {
                   Aumenta tu rentabilidad con precios <span className="text-[#ea6721]">Mayoristas</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg font-light">
-                  Expertos en Repuestos Eléctricos de Automatización Industrial. Accede al stock más completo de Variadores de Frecuencia, PLC y Control Industrial.
+                  Expertos en Repuestos Eléctricos. Más simple, más rápido y con mejores márgenes en cada compra. Stock inmediato de Variadores, PLC y Control.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 text-sm font-medium text-gray-200 mb-8">
                   <div className="flex items-center gap-2">
