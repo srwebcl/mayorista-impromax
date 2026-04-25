@@ -55,7 +55,7 @@ export default function LeadForm() {
                 <div>
                     <input name="company" type="text" required className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:bg-white/10 focus:border-[#ea6721] text-white placeholder-gray-400 outline-none transition-all duration-300 focus:shadow-[0_0_15px_rgba(234,103,33,0.2)]" placeholder="Empresa / Razón Social" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <input name="phone" type="tel" required className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:bg-white/10 focus:border-[#ea6721] text-white placeholder-gray-400 outline-none transition-all duration-300 focus:shadow-[0_0_15px_rgba(234,103,33,0.2)]" placeholder="Teléfono (+569)" />
                     </div>
